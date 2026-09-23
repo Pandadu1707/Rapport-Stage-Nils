@@ -1,0 +1,31 @@
+SITE NILS FOLSCHVEILLER — DOSSIER PRET A DEPOSER
+=================================================
+
+Ce dossier contient le site complet, 100 % statique (aucune base de
+donnees, aucun serveur a configurer).
+
+COMMENT LE METTRE EN LIGNE (gratuit, ~2 minutes)
+------------------------------------------------
+Option 1 — Netlify (le plus simple) :
+  1. Aller sur https://app.netlify.com/drop
+  2. Glisser-deposer CE DOSSIER (ou le fichier .zip) dans la page
+  3. Netlify donne immediatement une adresse du type
+     https://xxxx.netlify.app — c'est le lien a partager.
+     (L'adresse peut etre personnalisee dans Site settings > Domain.)
+
+Option 2 — Cloudflare Pages :
+  1. https://pages.cloudflare.com > Create a project > Direct upload
+  2. Deposer le dossier, valider.
+
+Option 3 — Hebergement classique (OVH, cPanel...) :
+  Copier le CONTENU du dossier a la racine du site (www/).
+  Le fichier .htaccess active HTTPS et les en-tetes de securite.
+
+DETAILS
+-------
+- index.html et Site_Nils_Folschveiller.html sont la meme page :
+  index.html sert de page d'accueil par defaut chez tous les hebergeurs.
+- _headers (Netlify/Cloudflare) et .htaccess (Apache) appliquent les
+  en-tetes de securite — memes garanties que le site Seeders.
+- Le site est marque "noindex" : il ne sera pas reference par Google,
+  seules les personnes ayant le lien le verront.
